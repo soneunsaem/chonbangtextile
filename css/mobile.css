@@ -59,7 +59,7 @@
     }
 
 .box2 {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
@@ -142,14 +142,14 @@ video {
     background-position: center;
   }
 
-  .swiper .swiper-slide.s3{
+ .swiper .swiper-slide.s3{
       background-image: url(../images/m-main-visual3.jpg);
       background-size: cover;
       background-position: center;
   }
 
 
-  .swiper-pagination-bullet {
+.swiper-pagination-bullet {
     border-radius: 50px;
     border: 2px solid rgba(255, 255, 255, 0.75);
     width: 10px;
@@ -158,26 +158,26 @@ video {
     opacity: 1;
   }
   
-  .swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
     background: #fff;
     opacity: 1;
   }
   
-  .swiper-pagination {
+.swiper-pagination {
     bottom: 10px !important;
   }
 
   /* 콘텐츠 영역 */
-  #main-contents {
+#main-contents {
     width: 100%;
   }
 
-  #main-contents > .col {
+#main-contents > .col {
     margin-top: 30px;
     background: #fff;
   }
 
-  #main-contents > .col:last-child {
+#main-contents > .col:last-child {
       width: 100%;
       height: 230px;
       text-align: center;
@@ -190,7 +190,7 @@ video {
       align-items: center;
   }
 
-  #main-contents > .col:last-child img {
+#main-contents > .col:last-child img {
       width: 100px;
       height: 100px;
       margin-left: 25px;
@@ -281,8 +281,10 @@ video {
 /* 쇼핑몰info */
 #shopping-info {
     width: 100%;
+    height: 550px;
     margin-top: 30px;
     margin-bottom: 115px;
+    overflow: hidden;
 }
 
 #shopping-info .contents {
@@ -820,6 +822,7 @@ video {
     border-top: 4px solid var(--main-color);
 }
 
+
 #news-page tbody td {
     text-align: center;
     border-bottom: 1px solid #ccc;
@@ -827,6 +830,7 @@ video {
     padding-right: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 #news-page tbody td:nth-child(2) {
@@ -971,6 +975,13 @@ video {
 
 #map {
     width: 100%;
+}
+
+.map-line {
+    width: 1440px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 60px auto;
 }
 
 .address {

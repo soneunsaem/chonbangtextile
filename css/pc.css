@@ -12,7 +12,35 @@ body {
     width: 1440px;
 }
 
+html, body {
+    cursor: url('../images/cursor.cur'),auto;
+}
+
+a, a:link { 
+    cursor: url('../images/cursor2.cur'), auto;
+} 
+a:hover, a:focus { 
+    cursor: url('../images/cursor2.cur'), auto;
+} 
+a:active {
+    cursor: url('../images/cursor2.cur'), auto;
+}
+
 /* header */
+
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transform: translate(30%, 30%);
+}
+
+.cursor img {
+    width: 75px;
+    height: 75px;
+}
+
 
 #main-header {
     height: 70px;
@@ -111,7 +139,7 @@ body {
     margin-left: 20px;
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: url('../images/cursor2.cur'), auto;
 }
 
 .nav-mall {
@@ -160,11 +188,13 @@ video {
     margin: 0 auto;
 }
 
-  .swiper-button-prev,
-  .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     color: #fff;
     margin-top: 13px;
+    cursor: url('../images/cursor2.cur'),auto;
   }
+
 
   .swiper-pagination-bullet {
     border-radius: 50px;
@@ -300,8 +330,9 @@ video {
         padding: 10px;
         font-size: 28px;
         color: #fff;
-        cursor: pointer;
+        cursor: url('../images/cursor2.cur'),auto;
     }
+
   
  .tab-group > a.on {
     background: var(--sub-color2);
@@ -388,7 +419,7 @@ video {
 #sitemap-modal-close {
     background: transparent;
     border-style: none;
-    cursor: pointer;
+    cursor: url('../images/cursor2.cur'), auto;
     position: absolute;
     top: 20px;
     right: 250px;
@@ -516,8 +547,9 @@ footer .footer-info .copy {
     position: absolute;
     right: 0;
     top: 100px;
-    cursor: pointer;
+    cursor: url('../images/cursor2.cur'),auto;
 }
+
 
 
 /*회사소개*/
@@ -944,12 +976,17 @@ footer .footer-info .copy {
 
 #news-page table {
     border-top: 4px solid var(--main-color);
+    border-collapse: collapse;
+    width: 1253px;
 }
 
 #news-page thead th:nth-child(3) {
     padding-left: 100px;
     padding-right: 100px;
 }
+
+
+
 
 #news-page tbody td {
     text-align: center;
@@ -960,6 +997,7 @@ footer .footer-info .copy {
 
 #news-page tbody td:nth-child(2) {
     text-align: left;
+    padding-left: 70px;
 }
 
 #news-page #text-title {
@@ -1126,6 +1164,13 @@ footer .footer-info .copy {
 #map #text-title h2 {
     font-size: 36px;
     font-weight: 500;
+}
+
+.map-line {
+    width: 1440px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 60px auto;
 }
 
 .address {

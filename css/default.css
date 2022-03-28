@@ -22,7 +22,6 @@ ul {
 a {
     text-decoration: none;
     color: var(--text-color1);
-
 }
 
 body {
@@ -30,7 +29,12 @@ body {
     color: var(--text-color1);
 }
 
+table {
+    border-collapse: collapse;
+}
+
 ::selection {
     background: var(--main-color);
     color: #fff;
 }
+
