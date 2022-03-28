@@ -172,7 +172,7 @@ video {
 /* 슬라이더 */
 .swiper {
     width: 1440px;
-    margin-bottom: 45px;
+    margin-bottom: 80px;
   }
 
 #main-visual {
@@ -217,21 +217,14 @@ video {
   /* 콘텐츠 영역 */
   #main-contents {
     width: 1440px;
-    height: 300px;
+    height: 322px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 45px;
-  }
-
-  .color-box {
     background: rgba(53, 129, 202, 0.2);
-    width: 1440px;
-    height: 410px;
-    margin: 0 auto;
   }
 
   #main-contents > .col {
-    margin-top: 45px;
     background: #fff;
   }
 
