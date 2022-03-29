@@ -12,10 +12,6 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-#main-header h1{
-    margin-top: 10px;
-}
-
 #main-header h1 img {
     width: 153px;
 }
@@ -34,7 +30,6 @@
     position: absolute;
     right: 15px;
     top: 15px;
-    cursor: pointer;
 }
 
 .toggle-close-btn {
@@ -44,7 +39,6 @@
     right: 27px;
     top: 25px;
     z-index: 100;
-    cursor: pointer;
 }
 
 #mobile-gnb {
@@ -59,7 +53,7 @@
     }
 
 .box2 {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
@@ -93,6 +87,15 @@
     font-weight: 400;
 }
 
+.box1 {
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: none;
+}
+
 /* main-video */
 #main-video {
     width:100%;
@@ -116,14 +119,23 @@ video {
   }
 
 #main-visual {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
-#main-visual > h2 {
-    padding-bottom: 10px;
+#main-visual .swiper-title {
+    width: 100%;
+    height: 40px;
+    background: var(--sub-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-visual h2 {
     font-size: 18px;
     font-weight: 500;
     text-align: center;
+    color: #fff;
 }
 
 #main-visual .title {
@@ -142,14 +154,14 @@ video {
     background-position: center;
   }
 
- .swiper .swiper-slide.s3{
+  .swiper .swiper-slide.s3{
       background-image: url(../images/m-main-visual3.jpg);
       background-size: cover;
       background-position: center;
   }
 
 
-.swiper-pagination-bullet {
+  .swiper-pagination-bullet {
     border-radius: 50px;
     border: 2px solid rgba(255, 255, 255, 0.75);
     width: 10px;
@@ -158,26 +170,26 @@ video {
     opacity: 1;
   }
   
-.swiper-pagination-bullet-active {
+  .swiper-pagination-bullet-active {
     background: #fff;
     opacity: 1;
   }
   
-.swiper-pagination {
+  .swiper-pagination {
     bottom: 10px !important;
   }
 
   /* 콘텐츠 영역 */
-#main-contents {
+  #main-contents {
     width: 100%;
   }
 
-#main-contents > .col {
+  #main-contents > .col {
     margin-top: 30px;
     background: #fff;
   }
 
-#main-contents > .col:last-child {
+  #main-contents > .col:last-child {
       width: 100%;
       height: 230px;
       text-align: center;
@@ -190,7 +202,7 @@ video {
       align-items: center;
   }
 
-#main-contents > .col:last-child img {
+  #main-contents > .col:last-child img {
       width: 100px;
       height: 100px;
       margin-left: 25px;
@@ -279,6 +291,7 @@ video {
     }
 
 /* 쇼핑몰info */
+
 #shopping-info {
     width: 100%;
     height: 550px;
@@ -448,6 +461,12 @@ video {
     font-size: 16px;
     font-weight: 400;
     text-align: right;
+}
+
+#company .company-img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 50px;
 }
 
 /*연혁*/
@@ -736,13 +755,6 @@ video {
     margin-left: 20px;
 }
 
-.store-ask-box > span {
-    font-size: 14px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #ccc;
-}
-
 .store-ask-box {
     width: 90%;
     margin: 0 auto;
@@ -760,8 +772,8 @@ video {
 
 .store-ask-box > span {
     font-size: 14px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: #ccc;
 }
 
@@ -777,14 +789,15 @@ video {
 }
 
 /* 고객센터 - news */
+
 #news-page > #mobile-depth2 ul { 
     width: 100%;
     column-count: 2;
 }
+
 #news-page .news-box {
     width: 100%;
-    height: 227px;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     justify-content: center;
 }
@@ -792,9 +805,9 @@ video {
 #news-page .page {
     /* background: #ccc; */
     text-align: center;
-    font-size: 12px;
-    margin-bottom: 100px;
+    font-size: 14px;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 #news-page .page img {
@@ -818,19 +831,19 @@ video {
     padding-right: 8px;
 }
 
-#news-page table {
-    border-top: 4px solid var(--main-color);
+#news-page thead th:nth-child(4) {
+    padding: 10px;
 }
 
+#news-page table {
+    border-top: 4px solid var(--main-color);
+    border-collapse: collapse;
+}
 
 #news-page tbody td {
     text-align: center;
     border-bottom: 1px solid #ccc;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+    padding: 20px;
 }
 
 #news-page tbody td:nth-child(2) {
@@ -839,6 +852,9 @@ video {
 
 #news-page tbody td:nth-child(4) {
     color: #a8a8a8;
+    font-size: 10px;
+    text-align: justify;
+    padding: 0;
 }
 
 /* FAQ-page */
@@ -951,6 +967,12 @@ video {
     right: 10px;
 }
 
+.FAQ-text-box ul li > .col-icon2 img {
+    width: 14px;
+    height: 14px;
+}
+
+
 .FAQ-text-box img {
     margin-right: 20px;
 }
@@ -966,22 +988,25 @@ video {
 
 #FAQ-page .page {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 100px;
     margin-top: 50px;
 }
 
+#FAQ-page .page img {
+    width: 12px;
+    height: 12px;
+}
+
+
+#FAQ-page .page a:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 /* map */
 
 #map {
     width: 100%;
-}
-
-.map-line {
-    width: 1440px;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.25);
-    margin: 60px auto;
 }
 
 .address {
@@ -996,8 +1021,11 @@ video {
     margin: 0 auto;
 }
 
-.address1 {
-    margin-bottom: 40px;
+.map-line {
+    width: 90%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 60px auto;
 }
 
 .address2 {

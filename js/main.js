@@ -39,25 +39,25 @@ $(function(){
        $('#faq').removeClass('on')
        $('#news').addClass('on');
    })
+
    $('.tab-group > a:last').click(function(){
        $('.tab-group > a').removeClass('on')
        $(this).addClass('on')
        $('#news').removeClass('on')
        $('#faq').addClass('on');
    })
+
    // sitemap-menu
    $('.sitemap-btn').click(function(){
        $('.sitemap-modal').addClass('on')
        $('#sitemap-modal-close').addClass('on');
    })
+
    // sitemap-close
    $('#sitemap-modal-close').click(function(){
        $('.sitemap-modal').removeClass('on')
        $('#sitemap-modal-close').removeClass('on');
    })
-
-   $(document).ready(function(){ 
-       $(document).mousemove(function(e){ var mouseX = e.pageX; var mouseY = e.pageY; $('.cursor').css({ left: mouseX + "px", top : mouseY + "px" }) }) })
 });
 
 $(window).resize(function(){
@@ -67,3 +67,4 @@ $(window).resize(function(){
         $('#mobile-gnb').hide();
     }
 })
+
